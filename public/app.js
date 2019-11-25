@@ -51,7 +51,9 @@ const mainGrid = Ext.create('Ext.grid.Panel', {
             xtype: 'numberfield',
             value: 1,
             maxValue: 99,
-            minValue: 1
+            minValue: 1,
+            step: 1,
+            decimalPrecision: 0,
         },
     }, {
         text: 'Валюта',
@@ -87,6 +89,7 @@ const mainGrid = Ext.create('Ext.grid.Panel', {
             maxValue: 1000000,
             minValue: 0.01,
             step: 0.01,
+            decimalPrecision: 2,
         },
     }],
     selModel: 'rowmodel',
